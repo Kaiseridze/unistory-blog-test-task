@@ -1,0 +1,21 @@
+.main_block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 0 30px 40px 0;
+}
+
+.main_content {
+   position: relative;
+   border: 1px solid;
+   background-color: rgb(255, 255, 255);
+   padding: 40px 80px;
+   margin-bottom: 15px;
+}
+
+.main_btn {
+   background: rgb(177, 213, 255);
+   border-radius: 8px;
+   padding: 5px 60px;
+}

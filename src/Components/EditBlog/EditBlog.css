@@ -1,0 +1,39 @@
+.edit_container {
+   display: flex;
+   flex-direction: column;
+   padding: 100px;
+
+}
+
+.edit_input {
+   padding: 15px;
+   margin-bottom: 15px;
+}
+
+.edit_btns {
+   margin-top: 15px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.edit_btn--blue {
+   background: rgb(177, 213, 255);
+   padding: 10px 20px;
+   color: #000;
+}
+
+.back_btn--blue {
+   background: rgb(177, 213, 255);
+   padding: 10px 30px;
+}
+
+.edit_btn--red {
+   background: rgb(251, 145, 145);
+   padding: 10px 20px;
+   color: #000;
+}
+
+textarea{
+   font-size: 20px;
+   font-weight: 400;
+}
