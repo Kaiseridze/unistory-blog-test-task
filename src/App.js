@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom"
 import EditBlog from './Components/EditBlog'
-import Main from "./Main"
+import Main from "./Pages/Main"
 // Init App and Routes for routing
 function App() {
 	return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import "../Components/EditBlog/EditBlog.css"
-import { removeBlogPost, editBlogPost } from "../redux/actions"
+import "./EditPage.css"
+import { removeBlogPost, editBlogPost } from "../../redux/actions"
 import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 import { useParams } from "react-router-dom"
@@ -15,6 +15,14 @@ function EditWrapper({ header, text, pageId }) {
 			dispatch(removeBlogPost(pageId))
       }
 	}
+
+	const headerListener = (e) => {
+		setHeaderValue(e.target.value)
+	}
+
+	const textListener = (e) => {
+		setTextValue(e.target.value)
+	} 
 	const onEdit = () => {
 		dispatch(
 			editBlogPost({
@@ -36,12 +44,12 @@ function EditWrapper({ header, text, pageId }) {
 					<h1>Запись: "{headerValue ? headerValue : header}"</h1>
 					<input
 						defaultValue={header}
-						onChange={(e) => setHeaderValue(e.target.value)}
+						onChange={headerListener}
 						className='edit_input'
 						type='text'
 					/>
 					<textarea
-						onChange={(e) => setTextValue(e.target.value)}
+						onChange={textListener}
 						defaultValue={text}
 						name=''
 						id=''

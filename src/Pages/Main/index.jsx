@@ -1,7 +1,7 @@
 import React from "react"
-import BlogItem from "./Components/BlogItem"
-import "./index.css"
-import Modal from "./Components/Modal"
+import BlogItem from "../../Components/BlogItem"
+import '../../index.css'
+import Modal from "../../Components/Modal"
 import { useState } from "react"
 import { useSelector } from "react-redux"
 

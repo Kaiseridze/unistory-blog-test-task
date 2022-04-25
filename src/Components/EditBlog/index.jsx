@@ -1,7 +1,7 @@
 import React from "react"
 import { useSelector } from "react-redux"
 
-import EditWrapper from "../EditWrapper"
+import EditWrapper from "../../Pages/EditPage/lndex"
 function EditBlog() {
 	const storeData = useSelector((state) => state.blogReducer)
 	const parsedData = Object.values(storeData) // Parse redux object to array for map function
